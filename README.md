@@ -22,8 +22,8 @@ Engineers frequently generate embedded code from Simulink models for various con
 ***
 ### Hello World
 Before you start, put the seed files you need for your experiment in the folder 'corpus_seed'.Second, if you want to run this method more carefully, you should configure the 'cfg.m' file, in which you can modify the files and intermediate file paths you use to save the generated code, as well as the required partition size and granularity of each partition.Once configured, add the `courpus_seed` folder to the working path, which is set to ```addpath(Seed_Model_Path)```
-When all of the above preparation is complete, you simply enter ```ModelProcess``` on the Matlab command line to launch the program and begin the model partitioning and variant process.This will help you get started with MOPART tools.
-note: When the program is interrupted due to some accident, you can continue the experiment by modifying the loop order 'i' in the file ```ModelProcess``` according to the progress that has been completed before.
+When all of the above preparation is complete, you simply enter ```ModelProcessing``` on the Matlab command line to launch the program and begin the model partitioning and variant process.This will help you get started with MOPART tools.
+note: When the program is interrupted due to some accident, you can continue the experiment by modifying the loop order 'i' in the file ```ModelProcessing.m``` according to the progress that has been completed before.
 ***
 
 ### Here are the details of these bugs
