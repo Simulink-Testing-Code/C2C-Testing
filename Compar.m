@@ -46,7 +46,7 @@ function cp = Compar(model,mode,varargin)
     runID1 = runIDs(end-1);
     runID2 = runIDs(end);
     
-    diffResults = Simulink.sdi.compareRuns(runID1,runID2,'reltol',1e-5,'timetol',0);
+    diffResults = Simulink.sdi.compareRuns(runID1,runID2,'reltol',1e-3,'timetol',0);
     diffResults.Summary
     numComparisons = diffResults.count;
     fprintf('compare %s in mode %s and %s in mode %s \n',model,mode,newmodels,new_mode);
